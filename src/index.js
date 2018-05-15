@@ -3,15 +3,6 @@ import ReactDOM from 'react-dom';
 
 const ROTTEN_MEAT_PRODUCTS = ["Old Fish", "Sweeney Todd", "Tomatoes?"]
 
-const products = [<li>{ROTTEN_MEAT_PRODUCTS[0]}</li>, <li>ROTTEN_MEAT_PRODUCTS[1]</li>, <li>ROTTEN_MEAT_PRODUCTS[2]</li>]
-render() {
-  return (
-    <div>
-      { products }
-    </div>
-  )
-}
-
 export class OlderCoaster extends React.Component {
   render() {
     return (
