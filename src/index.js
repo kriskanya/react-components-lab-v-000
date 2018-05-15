@@ -38,16 +38,21 @@ export class InFrontOfYou extends React.Component {
   }
 }
 
+BUTCHER_PRODUCTS = ["Tenderloin", "Short ribs", "Beef shin", "Ribeye"]
+
+const items = BUTCHER_PRODUCTS.map(function(item) {
+  return (
+    <li>{item}</li>
+  )
+});
+
 export class ButcherShop extends React.Component {
   render() {
     return (
       <div class="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
-          <li>Tenderloin</li>
-          <li>Short ribs</li>
-          <li>Beef shin</li>
-          <li>Ribeye</li>
+          {items}
         </ul>
       </div>
     )
